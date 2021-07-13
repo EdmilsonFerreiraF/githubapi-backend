@@ -2,7 +2,7 @@
     🔗 Github API App</a>
 </h1>
 <h3>
-    <a href="https://github.com/EdmilsonFerreiraF/githubapi-backend">🔗 Backend </a>
+    <a href="https://github.com/EdmilsonFerreiraF/githubapi-frontend">🔗 Frontend </a>
 </h3>
 <p align="center">🚀 Logue pelo Github e utilize a API do Github para obter usuários e repositórios do Github</p>
 
