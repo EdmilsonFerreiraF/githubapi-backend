@@ -432,24 +432,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"compassouolbackend@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "compassouolbackend@workspace:."
-  dependencies:
-    "@types/cors": ^2.8.11
-    "@types/dotenv": ^8.2.0
-    "@types/express": ^4.17.13
-    "@types/mongoose": ^5.11.97
-    "@types/node": ^16.0.1
-    axios: ^0.21.1
-    cors: ^2.8.5
-    dotenv: ^10.0.0
-    express: ^4.17.1
-    ts-node-dev: ^1.1.8
-    typescript: ^4.3.5
-  languageName: unknown
-  linkType: soft
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -792,6 +774,24 @@ fsevents@~2.3.2:
   checksum: b136dbeb8e40acaaddab6c71c9f34d3c9aa104efc538c8c0ddcd74b25efb8daeb8dca24a9b30626b477d66beccd3dee8dd31e25eb4c7c97ec58a3f1a82914be1
   languageName: node
   linkType: hard
+
+"githubapibackend@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "githubapibackend@workspace:."
+  dependencies:
+    "@types/cors": ^2.8.11
+    "@types/dotenv": ^8.2.0
+    "@types/express": ^4.17.13
+    "@types/mongoose": ^5.11.97
+    "@types/node": ^16.0.1
+    axios: ^0.21.1
+    cors: ^2.8.5
+    dotenv: ^10.0.0
+    express: ^4.17.1
+    ts-node-dev: ^1.1.8
+    typescript: ^4.3.5
+  languageName: unknown
+  linkType: soft
 
 "glob-parent@npm:~5.1.2":
   version: 5.1.2

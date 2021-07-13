@@ -2,7 +2,8 @@
   "name": "githubapibackend",
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
-    "start": "node && ./build/index.js",
+    "start": "tsc && node ./build/index.js",
+    "build": "tsc",
     "test": "jest --watchAll --runInBand  ./test",
     "test:watch": "jest --watch"
   },
