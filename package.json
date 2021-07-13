@@ -1,5 +1,4 @@
 {
-  "name": "githubapibackend",
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
     "start": "tsc && node ./build/index.js",
@@ -19,5 +18,11 @@
     "express": "^4.17.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.3.5"
-  }
+  },
+  "name": "githubapibackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/EdmilsonFerreiraF/githubapi-backend.git",
+  "author": "EdmilsonFerreiraF <Edmilsonf.o3@gmail.com>",
+  "license": "MIT"
 }
