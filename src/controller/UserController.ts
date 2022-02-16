@@ -46,7 +46,7 @@ export class UserController {
 
          res.redirect(url)
       } catch (error) {
-         const { statusCode, message } = error;
+         const { statusCode, message } = error as any as any;
          res.status(statusCode || 400).send({ message });
       };
    };
@@ -63,7 +63,7 @@ export class UserController {
 
          res.send({ token })
       } catch (error) {
-         const { statusCode, message } = error;
+         const { statusCode, message } = error as any;
          res.status(statusCode || 400).send({ message });
       };
    }
@@ -74,7 +74,7 @@ export class UserController {
 
          console.log(body)
       } catch (error) {
-         const { statusCode, message } = error;
+         const { statusCode, message } = error as any;
          res.status(statusCode || 400).send({ message });
       };
    };
