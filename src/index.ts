@@ -10,6 +10,6 @@ app.use(cors());
 
 app.use('/user', userRouter);
 
-app.listen(process.env.DB_PORT || 3003, () => {
+app.listen(process.env.PORT || 3003, () => {
     console.log("Servidor rodando na porta 3003");
 });
