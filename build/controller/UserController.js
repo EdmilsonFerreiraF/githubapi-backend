@@ -17,15 +17,16 @@ exports.UserController = void 0;
 const axios_1 = __importDefault(require("axios"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const CustomError_1 = require("../errors/CustomError");
+const config_1 = require("../config");
 dotenv_1.default.config();
 class UserController {
     loginAuth(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+                res.setHeader("Access-Control-Allow-Origin", `${config_1.BASE_URL}`);
                 res.setHeader("Access-Control-Allow-Headers", "X-Requested-With, content-type");
                 res.setHeader("Content-Type", "application/json");
-                const url = `https://github.com/login/oauth/authorize?client_id=${UserController.client_id}&redirect_uri=http://localhost:3000/login/callback`;
+                const url = `https://github.com/login/oauth/authorize?client_id=${UserController.client_id}&redirect_uri=${config_1.BASE_URL}/login/callback`;
                 res.redirect(url);
             }
             catch (error) {

@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 import { LoginInputDTO } from "../business/entities/user";
 import { CustomError } from "../errors/CustomError";
+import { BASE_URL } from '../config'
 
 dotenv.config();
 
@@ -38,11 +39,11 @@ export class UserController {
 
    public async loginAuth(req: Request, res: Response) {
       try {
-         res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+         res.setHeader("Access-Control-Allow-Origin", `${BASE_URL}`);
          res.setHeader("Access-Control-Allow-Headers", "X-Requested-With, content-type");
          res.setHeader("Content-Type", "application/json");
 
-         const url: string = `https://github.com/login/oauth/authorize?client_id=${UserController.client_id}&redirect_uri=http://localhost:3000/login/callback`
+         const url: string = `https://github.com/login/oauth/authorize?client_id=${UserController.client_id}&redirect_uri=${BASE_URL}/login/callback`
 
          res.redirect(url)
       } catch (error) {

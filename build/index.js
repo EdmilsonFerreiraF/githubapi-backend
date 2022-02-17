@@ -10,6 +10,6 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.use('/user', UserRouter_1.userRouter);
-app.listen(process.env.DB_PORT || 3003, () => {
+app.listen(process.env.PORT || 3003, () => {
     console.log("Servidor rodando na porta 3003");
 });

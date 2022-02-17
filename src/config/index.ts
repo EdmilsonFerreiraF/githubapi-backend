@@ -1,0 +1,1 @@
+export const BASE_URL = `https://youthful-einstein-d7f37c.netlify.app`
